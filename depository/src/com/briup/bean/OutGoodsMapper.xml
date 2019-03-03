@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.briup.bean.OutGoodsMapper">
+	<select id="selectOutGoodsByName"       parameterType="string" resultType="Goods">
+		select * from OutStock
+		where name=#{name}
+	</select>
+	<select id="selectAllOutGoods" parameterType="Goods" resultType="Goods">
+		   select * from OutStock
+	</select>
+	<select id="selectOutGoodsById" parameterType="string" resultType="Goods">
+		select * from OutStock
+		where goodsid=#{goodsid}
+	</select>
+	<insert id="insertOutGoods" parameterType="Goods">
+		<selectKey keyColumn="id" keyProperty="id" order="BEFORE" resultType="int">
+			select OutStock_seq.nextval from dual
+		</selectKey>
+	  insert into OutStock values(#{id},#{name},#{address},#{num},#{goodsid},#{sort},#{price})
+	</insert>
+	<update id="updateOutGoods" parameterType="Goods"> 
+			update OutStock set num=#{num}
+			where goodsid=#{goodsid} 
+	</update> 
+</mapper>

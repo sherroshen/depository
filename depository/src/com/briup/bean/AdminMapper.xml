@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.briup.bean.AdminMapper">
+	<select id="selectAdminByName" 
+	parameterType="String" resultType="Admin">
+		select * from admin
+		where account=#{account}
+	</select>
+	<select id="selectAdminById" 
+	parameterType="int" resultType="Admin">
+		select * from admin
+		where id=#{id}
+	</select>
+	<insert id="insertAdmin" parameterType="Admin">
+	<!-- 
+		<selectKey keyColumn="id" keyProperty="id" order="BEFORE" resultType="int">
+			select admin_seq.nextval from dual
+		</selectKey>
+	-->
+	insert into admin (account,password,name,sex,age,phone,email,address)values(#{account},#{password},#{name},#{sex},#{age},#{phone},#{email},#{address})
+	</insert>
+	<update id="updateAdmin" parameterType="Admin"> 
+			update Admin set account=#{account},password=#{password}, name=#{name}, sex=#{sex}, age=#{age}, phone=#{phone}, address=#{address}, email=#{email}
+			where account=#{account} 
+	</update>
+</mapper>

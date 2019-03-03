@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings> 
+			<setting name="cacheEnabled" value="true" /> 
+    </settings> 
+	<typeAliases>
+		<package name="com.briup.bean"/>
+	</typeAliases>
+	<environments default="develepment">
+		<environment id="develepment">
+			<transactionManager type="JDBC"></transactionManager>
+			<dataSource type="POOLED">
+		<!-- <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>	 -->
+				<property name="driver" value="com.mysql.jdbc.Driver"/>
+		<!-- <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>	 -->
+				<property name="url" value="jdbc:mysql:///cangku?useUnicode=true&amp;characterEncoding=UTF-8&amp;allowMultiQueries=true&amp;useSSL=true"/>
+				<property name="username" value="root"/>
+				<property name="password" value="123456"/>
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="com/briup/bean/AdminMapper.xml"/>
+		<mapper resource="com/briup/bean/CustomerMapper.xml"/>
+		<mapper resource="com/briup/bean/GoodsMapper.xml"/>
+		<mapper resource="com/briup/bean/OutGoodsMapper.xml"/>
+	</mappers>
+</configuration>

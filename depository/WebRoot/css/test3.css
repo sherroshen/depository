@@ -1,0 +1,138 @@
+ <style type="text/css">
+ .InS{
+    border: 1px solid #EDF5FF ;
+	width:845px;
+	height:470px;	
+	border-radius:5px;
+	background-color: #EDF5FF;
+	margin: auto;
+	border-color: #98A7BE;
+  }
+  .f1{
+     width: 70%;
+     height: 30px;
+     margin-top: 10px;
+    } 
+  .f2{
+     width: 700px;
+     height: 500px;
+     margin: auto;
+     margin-top: 150px;
+    } 
+  .f3{
+     width: 600px;
+     height: 200px;
+     margin: auto;
+     
+     margin-top: 200px;
+    }  
+  .di{
+	border: 1px solid #EDF5FF ;
+	width:345px;
+	height:370px;	
+	border-radius:5px;
+	background-color: #EDF5FF;
+	margin: auto;
+	border-color: #98A7BE;
+	}
+.d0{
+	margin-left: 22px;
+	font-weight: bold;
+}
+.d1{
+	margin-top: 20px;
+	margin-left: 22px;
+    }	
+.d3{
+	margin-top: 20px;
+	
+}
+.d4{
+	margin-top: 30px;
+	margin-left: 20px;
+	}
+.d5,.d6{
+	font-size:13px;
+	margin-top: 15px;
+	margin-left: 22px;
+}	
+.hui{
+	color: #98869B;
+}
+.blue{
+	color: #5850D3;
+}
+input[name="in_be"]{
+	border:1px solid;
+	width: 304px;
+	height: 40px;
+	border-radius: 3px;
+	border-color: #98A7BE;
+	font-size:15px;
+	color: #8B9096;
+	margin-right:20px;
+		}
+input[name="pass"]{
+	border:0.5px solid;
+	width: 304px;
+	height: 40px;
+	border-radius: 3px;
+	border-color: #98A7BE;
+	margin-top:22px;
+	margin-left: 22px;
+	font-size:15px;
+	color: #8B9096;
+	margin-right:20px;
+	}
+input[name="cin_be"]{
+	border:1px solid;
+	width: 304px;
+	height: 40px;
+	border-radius: 3px;
+	border-color: #98A7BE;
+	font-size:15px;
+	color: #8B9096;
+	margin-right:20px;
+		}
+input[name="cpass"]{
+	border:0.5px solid;
+	width: 304px;
+	height: 40px;
+	border-radius: 3px;
+	border-color: #98A7BE;
+	margin-top:22px;
+	margin-left: 22px;
+	font-size:15px;
+	color: #8B9096;
+	margin-right:20px;
+	}	
+input[name="cb"]{
+	margin-left:22px;
+  	font-size: 13px;
+	}
+.pwb{
+	font-size:13px;
+}
+.pw{
+	font-size:15px;
+	margin-left: 120px;	
+	position: relative;
+}
+p{
+  color: #274578;
+  font-weight: 800;
+}	
+button{
+	border:1px solid;
+	margin-left: 2px;
+	background-color: #67A00D;
+	width: 310px;
+	height: 40px;
+	color:#FFFFFF;
+	font-size:16px;
+	font-style:inherit;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+</style>
